@@ -1,10 +1,5 @@
-import GamePlay from './GamePlay';
+import Game from './Game';
 
-const gameplay = new GamePlay();
-gameplay.bindToDom(document.getElementById('game-container'));
-gameplay.init();
-
-setInterval(() => {
-  gameplay.addGoblinRandom();
-},
-1000);
+const container = document.querySelector('.container');
+const game = new Game(container);
+game.init();
