@@ -21,7 +21,6 @@ test('Метод showImage должен менять значение перем
 
 jest.useFakeTimers();
 
-
 test('Метод init вызывает методы generateGameField и start', () => {
   const container = document.createElement('div');
   const game = new Game(container);
